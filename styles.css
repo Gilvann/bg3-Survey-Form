@@ -94,3 +94,32 @@ select {
 select > option {
        color: #000000;
 }
+
+textarea{
+       height: 120px;
+       width: 440px;
+       border-radius: 12px;
+       padding: 12px;
+       margin-bottom: 35px;
+       background-color:  rgba(196, 196, 196, 0.725);
+       border-color: #E6A330;
+       border-width: 4px;
+}
+
+textarea::placeholder{
+       color: #fefefe;
+       font-size: 18px;
+}
+
+input[type="submit"]{
+       font-size: 20px;
+
+}
+
+input[type="submit"]:hover{
+       color: #E6A330;
+}
+
+input[type="submit"]:active{
+       color: green;
+}
