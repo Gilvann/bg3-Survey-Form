@@ -1,0 +1,96 @@
+* {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+       outline: none;
+}
+
+body {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 16px;
+
+       background-image: url(imgs/bg3.webp);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+
+       display: flex;
+}
+
+main {
+       min-width: 675px;
+       margin: 6em auto;
+       color: #fefefefe;
+       background-color: rgba(0, 0, 0, 0.45);
+       border-radius: 15px;
+}
+
+label {
+       margin: 0.5rem 0;
+       font-weight: bold;
+}
+
+h1, p{
+       margin: 1em auto;
+       text-align: center;
+}
+
+h1#title, p#description {
+       max-width: 75%;
+}
+
+hr {
+       border-color: #E6A330;
+       height: 0.2px;
+       
+}
+
+form {
+       
+       margin: 0 auto;
+       max-width: 500px;
+       min-width: 300px;
+       width: 70vh;
+       padding: 2em;
+}
+
+input, textarea, select{
+       margin-top: 10px;
+       width: 100%;
+       margin-left:0;
+}
+
+input {
+       padding-bottom:.25em;
+       margin-bottom: 1em;
+       color:#fefefe;
+       background: none;
+       border:none;
+       border-bottom: 2px solid #E6A330;
+}
+
+input::placeholder {
+       color: rgba(196, 196, 196, 0.725)
+}
+
+input[type=radio], input[type=checkbox] {
+       width: inherit
+}
+
+select {
+       appearance: none;
+       padding-bottom:.25em;
+       margin-bottom:1em;
+       color: rgba(196, 196, 196, 0.725);
+       text-align: center;
+       background:none;
+       border: none;
+       border-bottom: 2px solid #E6A330;
+       outline:none;
+       cursor: pointer;
+}
+
+select > option {
+       color: #000000;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Survey Form</title>
+       <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+       <main>
+              <h1 id="title">Formulário de pesquisa de Baldur's Gate 3</h1>
+              <p id="description">Obrigado por reservar um tempo para escolher qual personagem é o melhor (Shadowheart)</p>
+              
+              <form action="#" id="survey-form" method="post">
+                     <section id="personal-info">
+                            <div>
+                                   <label for="name" id="name-label">Nome </label>
+                                   <input id="name" type="text"  placeholder="Coloque o seu nome" required />
+                            </div>
+       
+                            <div>
+                                   <label for="email" id="email-label">Email</label>
+                                   <input id="email" type="email"  placeholder="Coloque o seu email" required />
+                            </div>
+       
+                            <div>
+                                   <label for="age" id="number-label">Idade</label>
+                                   <input id="age" type="number" placeholder="Coloque sua idade" min="17" max="1700" required>
+                            </div>
+       
+                            <div>
+                                   <label for="dropdown">Qual o seu gênero</label>
+                                   <select name="" id="dropdown">
+                                          <option value="">Selecione o gênero</option>
+                                          <option value="1">Homem</option>
+                                          <option value="2">Mulher</option>
+                                          <option value="3">Helicoptero de Combate</option>
+                                   </select>
+                            </div>
+                     </section>
+
+                     <section>
+                            <p>Você recomendaria Baldur's Gate 3 para um amigo?</p>                     
+                            <div>
+                                   <input type="radio" checked name="radio-input" value="Definitivamente"/>
+                                   <label for="definitivamente">Definitivamente</label>
+                            </div>
+                            
+                            <div>
+                                   <input type="radio" name="radio-input" value="Com certeza">
+                                   <label for="com-certeza">Com certeza</label>
+                            </div>
+       
+                            <div>
+                                   <input type="radio" name="radio-input" value="Sim">
+                                   <label for="sim">Sim</label>
+                            </div> 
+                     </section>                     
+                 
+                     <section>
+                            <p>Qual o seu personagem favorito ?</p>            
+                            <select id="select" name="">
+                                   <option value="0" disabled></option>
+                                   <option value="1">Shadowheart</option>
+                                   <option value="2">Vampiro brabo (Astarion)</option>
+                                   <option value="3">Karlach</option>
+                                   <option value="4">Gale</option>
+                                   <option value="5">Sapa</option>
+                                   <option value="6">Minthara</option>
+                                   <option value="7">Perdedor corno (Wyll)</option>
+                                   <option value="8">Halsin</option>
+                            </select>
+                     </section>
+
+                     <section>
+                            <p> Quais personagens você mais usa nas equipes?</p>
+                            <div>
+                                   <input id="Shadowheart" type="checkbox" value="Shadowheart" required /> 
+                                   <label for="">Shadowheart</label>
+                            </div>
+
+                            <div>
+                                   <input id="Vampiro" type="checkbox" value="Vampiro" required /> 
+                                   <label for="">Vampiro brabo</label>
+                            </div>
+
+                            <div>
+                                   <input id="Gale" type="checkbox" value="Gale" required /> 
+                                   <label for="Gale">Gale</label>
+                            </div>
+
+                            <div>
+                                   <input id="Sapa" type="checkbox" value="Sapa" required /> 
+                                   <label for="">Sapa</label>
+                            </div>
+
+                            <div>
+                                   <input id="Minthara" type="checkbox" value="Minthara" required /> 
+                                   <label for="">Minthara</label>
+                            </div>
+                            
+                            <div>
+                                   <input id="Wyll" type="checkbox" value="Wyll" required /> 
+                                   <label for="">Perdedor corno (Wyll)</label>
+                            </div>
+                            
+                            <div>
+                                   <input id="Halsin" type="checkbox" value="Halsin" required /> 
+                                   <label for="">Halsin</label>
+                            </div>
+                     </section>
+                     
+                     <textarea id="textarea" name="" rows="3" cols="30" placeholder="Digite como você gosta da Shadowheart aqui..."></textarea>
+
+                     <input type="submit" id="submit" />
+              </form>
+       </main>
+     
+</body>
+
+</html>
